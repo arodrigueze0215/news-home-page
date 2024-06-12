@@ -27,23 +27,23 @@
   .grid-layout {
     @apply grid grid-cols-12 gap-[16px] mx-[16px]
   }
-  .title-1 {
+  .H1 {
     @apply text-gray-dark font-inter leading-[55px] text-[40px] xl:text-[55px] font-black not-italic;
   }
-  .title-2 {
-    @apply text-gray-dark font-inter leading-[55px] text-[40px] font-extrabold not-italic;
+  .H2 {
+    @apply text-gray-dark font-inter leading-[40px] text-[40px] font-extrabold not-italic;
   }
-  .subtitle-1 {
-    @apply text-gray-dark font-inter leading-[55px] text-[32px] font-extrabold not-italic;
+  .H3 {
+    @apply text-gray-dark font-inter leading-[32px] text-[32px] font-extrabold not-italic;
   }
-  .subtitle-2 {
-    @apply text-gray-dark font-inter leading-[55px] text-[20px] font-extrabold not-italic;
+  .H4 {
+    @apply text-gray-dark font-inter leading-[20px] text-[20px] font-extrabold not-italic;
   }
   .subtitle-3 {
     @apply text-gray-dark font-inter leading-[55px] text-[18px] font-extrabold not-italic;
   }
   .text {
-    @apply text-gray-dark font-inter leading-[55px] text-[14px] font-medium not-italic;
+    @apply text-gray-dark font-inter leading-[22px] text-[16px] font-medium not-italic;
   }
   .text-btn {
     @apply font-inter leading-[24px] text-[14px] font-extrabold not-italic tracking-[4.2px];

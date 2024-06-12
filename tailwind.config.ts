@@ -17,7 +17,7 @@ const config: Config = {
       'tomato': '#ED604F',
       'mustard': '#E4A349',
       'gray-dark': '#727272',
-      'gray-light': '#DDD',
+      'gray-light': '#DDDDDD',
     },
     fontFamily: {
       inter: ['inter', 'sans-serif'],
