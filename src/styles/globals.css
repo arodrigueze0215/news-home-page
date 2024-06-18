@@ -25,7 +25,7 @@
 }
 @layer components {
   .grid-layout {
-    @apply grid grid-cols-12 gap-[16px] mx-[16px]
+    @apply grid grid-cols-4 xl:grid-cols-12 gap-[16px] mx-[16px]
   }
   .H1 {
     @apply text-gray-dark font-inter leading-[55px] text-[40px] xl:text-[55px] font-black not-italic;
