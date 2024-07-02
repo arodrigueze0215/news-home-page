@@ -18,6 +18,9 @@
 }
 
 @layer base {
+  html {
+    height: 100vh;
+  }
   body {
     @apply bg-white; 
   }
@@ -47,5 +50,8 @@
   }
   .text-btn {
     @apply font-inter leading-[24px] text-[14px] font-extrabold not-italic tracking-[4.2px];
+  }
+  .link {
+    @apply font-inter leading-[21px] text-[18px] font-normal not-italic cursor-pointer hover:text-tomato;
   }
 }
