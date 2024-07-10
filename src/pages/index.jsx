@@ -1,8 +1,12 @@
-import Image from "next/image";
 import Nav from "../components/Nav";
 import HeroImage from "../components/HeroImage";
 import ListNews from "../components/ListNews";
 import ArticleLayout from "../components/Articles";
+const heroData = {
+  title: 'The Bright Future of Web 3.0?',
+  description: 'We dive into the next evolution of the web that claims to put the powet of the platforms back into the hands of the people. But is it really fulfilling its promise?',
+  image: 'https://res.cloudinary.com/dwlznwenw/image/upload/v1720232277/hero5_iphdey.jpg'
+}
 const listNews = [
   {
     title: "Hydrogen VS Electric Cars",
@@ -25,21 +29,21 @@ const listArticles = [
     title: "Reviving Retro PCs",
     description: "Will hydrogen-fueled cars ever carch up to EVs?",
     index: "01",
-    src: "/oldpc.jpg",
+    src: "https://res.cloudinary.com/dwlznwenw/image/upload/v1720232277/oldpc_ebdarr.jpg",
   },
   {
     position: 1,
     title: "Top 10 Laptops of 2022",
     description: "Our best picks for various needs and budgets.",
     index: "02",
-    src: "/keyboard.jpg",
+    src: "https://res.cloudinary.com/dwlznwenw/image/upload/v1720232277/playcontroller_gxfdtl.jpg",
   },
   {
     position: 2,
     title: "The Growth Gaming",
     description: "How the pandemic has sparked fresh opportunities.",
     index: "03",
-    src: "/playcontroller.jpg",
+    src: "https://res.cloudinary.com/dwlznwenw/image/upload/v1720232277/keyboard_ko3flh.jpg",
   },
 ];
 export default function Home() {
@@ -48,7 +52,7 @@ export default function Home() {
       <Nav />
       <header className="grid-layout">
         <article className="col-span-full xl:col-start-2 xl:col-span-10 grid xl:grid-cols-10 gap-[16px] mt-[48px]">
-          <HeroImage />
+          <HeroImage {...heroData} />
           <ListNews title="News" list={listNews} />
         </article>
       </header>

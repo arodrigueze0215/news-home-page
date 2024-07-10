@@ -1,4 +1,4 @@
-import { FC, useState, useEffect } from "react";
+import { useState, useEffect } from "react";
 import Logo from "../Logo";
 import MenuIcon from "../MenuIcon";
 import classNames from "classnames";
@@ -10,7 +10,6 @@ const Nav = () => {
 
   useEffect(() => {
     const handleResize = () => {
-      console.log('window.innerWidth >= 1024', window.innerWidth >= 1024)
       setIsDesktop(window.innerWidth >= 1024);
     };
     handleResize();
