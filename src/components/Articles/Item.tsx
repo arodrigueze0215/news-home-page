@@ -24,8 +24,8 @@ const Article = ({ title, description, index, src, position }: ArticleProps) => 
         <Image src={src} alt={title} fill className="aspect-[0.78]" />
       </div>
       <div className="col-span-3 xl:col-span-2">
-        <h3 className="H3 text-gray-light">{index}</h3>
-        <h2 className="H4 text-black pt-[14px] pb-[12px]">{title}</h2>
+        <h3 className="H3 text-tomato">{index}</h3>
+        <h2 className="H4 text-black pt-[14px] pb-[12px] cursor-pointer hover:text-tomato">{title}</h2>
         <span className="text">{description}</span>
       </div>
     </article>

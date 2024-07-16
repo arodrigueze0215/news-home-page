@@ -8,9 +8,9 @@ const Button: FC<PropsWithChildren<Props>> = ({ className, children, hoverInvert
   return (
     <button
       className={classnames(
-        "px-[34px] py-[12px] text-btn text-white",
+        "px-[34px] py-[12px] text-btn text-black",
         {"hover:bg-tomato bg-black": !hoverInvert},
-        {"hover:bg-black bg-tomato": hoverInvert},
+        {"hover:bg-black hover:text-white bg-tomato": hoverInvert},
         
         className
       )}

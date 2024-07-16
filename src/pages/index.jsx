@@ -1,3 +1,4 @@
+import Head from "next/head";
 import Nav from "../components/Nav";
 import HeroImage from "../components/HeroImage";
 import ListNews from "../components/ListNews";
@@ -5,10 +6,12 @@ import ArticleLayout from "../components/Articles";
 
 export async function getStaticProps() {
   const heroData = {
-    title: 'The Bright Future of Web 3.0?',
-    description: 'We dive into the next evolution of the web that claims to put the powet of the platforms back into the hands of the people. But is it really fulfilling its promise?',
-    image: 'https://res.cloudinary.com/dwlznwenw/image/upload/v1720232277/hero5_iphdey.jpg'
-  }
+    title: "The Bright Future of Web 3.0?",
+    description:
+      "We dive into the next evolution of the web that claims to put the powet of the platforms back into the hands of the people. But is it really fulfilling its promise?",
+    image:
+      "https://res.cloudinary.com/dwlznwenw/image/upload/v1720232277/hero5_iphdey.jpg",
+  };
   const listNews = [
     {
       title: "Hydrogen VS Electric Cars",
@@ -56,15 +59,20 @@ export async function getStaticProps() {
 
 export default function Home({ heroData, listNews, listArticles }) {
   return (
-    <main>
-      <Nav />
-      <header className="grid-layout">
-        <article className="col-span-full xl:col-start-2 xl:col-span-10 grid xl:grid-cols-10 gap-[16px] mt-[48px]">
-          <HeroImage {...heroData} />
-          <ListNews title="News" list={listNews} />
-        </article>
-      </header>
-      <ArticleLayout list={listArticles}/>
-    </main>
+    <>
+      <Head>
+        <title>News homepage</title>
+      </Head>
+      <main>
+        <Nav />
+        <header className="grid-layout">
+          <article className="col-span-full xl:col-start-2 xl:col-span-10 grid xl:grid-cols-10 gap-[16px] mt-[48px]">
+            <HeroImage {...heroData} />
+            <ListNews title="News" list={listNews} />
+          </article>
+        </header>
+        <ArticleLayout list={listArticles} />
+      </main>
+    </>
   );
 }
